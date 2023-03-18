@@ -3,7 +3,10 @@
     "outDir": "./built",
     "allowJs": true,
     "target": "es6",
-    "noEmit": false
+    "noEmit": false,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "module": "ES6"
   },
   "include": ["./src/**/*"]
 }

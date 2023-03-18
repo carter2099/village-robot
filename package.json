@@ -1,5 +1,11 @@
 {
+  "name": "village-robot",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3"
   }
 }

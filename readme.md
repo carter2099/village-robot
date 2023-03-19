@@ -8,6 +8,10 @@ For my own TypeScript and VSCode practice.
 
 ## Usage
 
+**Install dependencies**
+
+<pre>npm install</pre>
+
 **Compile the TypeScript to JavaScript**
 
 <pre>tsc</pre>

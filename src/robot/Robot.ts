@@ -9,7 +9,7 @@ export type RobotState = {
 };
 
 /**
- * Represents a Robot. A Robot is a defined as a function; in this project we'll have three
+ * Represents a Robot. A Robot is a defined as a function; in this project we'll have four
  * functions, or algorithms, that will deliver the parcels.
  */
 export type Robot = (state: VillageState, memory?: string[]) => RobotState;

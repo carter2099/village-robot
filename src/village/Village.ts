@@ -1,4 +1,4 @@
-import { buildGraph, randomPick } from "../utils/Utils";
+import { buildGraph, randomPick } from "../utils/Utils.js";
 
 /**
  * Represents a Parcel; a current position and a destination
@@ -13,10 +13,10 @@ export class VillageMap {
   static ROADS: string[] = [
     "Alice's House-Bob's House",
     "Alice's House-Post Office",
-    "Daris's House-Ernie's House",
+    "Daria's House-Ernie's House",
     "Ernie's House-Grete's House",
     "Grete's House-Shop",
-    "Markteplace-Post Office",
+    "Marketplace-Post Office",
     "Alice's House-Cabin",
     "Bob's House-Town Hall",
     "Daria's House-Town Hall",

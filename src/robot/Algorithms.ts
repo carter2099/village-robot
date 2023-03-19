@@ -1,6 +1,6 @@
-import { findRoute, randomPick } from "../utils/Utils";
-import { VillageMap } from "../village/Village";
-import { Robot, RobotState } from "./Robot";
+import { findRoute, randomPick } from "../utils/Utils.js";
+import { VillageMap } from "../village/Village.js";
+import { Robot, RobotState } from "./Robot.js";
 
 export class RobotAlgorithm {
   // Robot that chooses a random direction to go to every time
@@ -11,7 +11,7 @@ export class RobotAlgorithm {
   // Robot that follows the mail route
   static MAIL_ROUTE: Robot = (state, memory): RobotState => {
     if (memory.length == 0) {
-      memory = VillageMap.MAIL_ROUTE;
+      memory = Array.from(VillageMap.MAIL_ROUTE);
     }
     return { direction: memory[0], memory: memory.slice(1) };
   };
@@ -35,14 +35,17 @@ export class RobotAlgorithm {
     const { currentPosition, parcels } = state;
     let shortestRoute = [];
     if (route.length == 0) {
-      parcels.forEach((parcel) => {
+      parcels.forEach((parcel, idx) => {
         const destination =
           parcel.position == currentPosition
             ? parcel.deliveryAddress
             : parcel.position;
         route = findRoute(VillageMap.GRAPH, currentPosition, destination);
-        if (shortestRoute && route.length < shortestRoute.length) {
-          shortestRoute = route;
+        if (idx == 0) {
+          shortestRoute = Array.from(route);
+        }
+        if (route.length < shortestRoute.length) {
+          shortestRoute = Array.from(route);
         }
       });
     }

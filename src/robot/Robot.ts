@@ -1,4 +1,4 @@
-import { VillageState } from "../village/Village";
+import { VillageState } from "../village/Village.js";
 
 /**
  * Represents the state of the Robot; its direction and route it plans to take

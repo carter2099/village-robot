@@ -1,6 +1,6 @@
-import { RobotAlgorithm } from "./robot/Algorithms";
-import { Robot, runRobot } from "./robot/Robot";
-import { VillageState } from "./village/Village";
+import { RobotAlgorithm } from "./robot/Algorithms.js";
+import { Robot, runRobot } from "./robot/Robot.js";
+import { VillageState } from "./village/Village.js";
 
 const args = process.argv.slice(2);
 

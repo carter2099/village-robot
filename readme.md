@@ -4,8 +4,6 @@ A little program that performs a task in a virtual world. From _Eloquent JavaScr
 Marijn Haverbeke. Heavily refactored for code organization, TypeScript conversion, and the ability to
 choose the Robot's implementation when the script is run.
 
-For my own TypeScript and VSCode practice.
-
 ## Usage
 
 **Install dependencies**
